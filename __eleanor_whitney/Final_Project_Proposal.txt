@@ -1,0 +1,8 @@
+
+My goal is to create an app that helps indie musicians understand how songs they have uploaded to sharing platforms such as Bandcamp, Soundcloud, Last.fm and ReverbNation are performing as a whole across platforms. My idea is that a musician could tell at glance how many times a song had been listened to or downloaded across all the different platforms.
+
+Soundcloud, Bandcamp, ReverbNation and Last.fm seem to have APIs. How I imagine this would work is a user could create a login, connect to their Soundcloud, Last.fm, ReverbNation, or Bandcamp accounts, and see overall number of listens and downloads. 
+
+My ultimate goal would be to make an app that functions a dashboard that enables musicians to keep track of their listens and downloads and eventually song sales and other income, such as pulling ticket sales through Eventbrite, or Brownpaper Tickets. The income and ticket tracking part of the idea is way outside the scope of this project, but I want to get some kind of framework for this idea in place. 
+
+From my experience working with artists in all disciplines its very hard for them to track their income or performance and report accurate numbers. I'd like to create something that makes this process easy and painless for them and eventually also build it out to include other kinds of artists, such as performing artists and visual artists.
