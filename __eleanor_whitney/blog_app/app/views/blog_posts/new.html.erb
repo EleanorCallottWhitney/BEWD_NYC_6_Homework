@@ -1,0 +1,13 @@
+<h3> New Post </h3>
+
+<%= form_for @blog_post do |f| %>
+
+<%= f.label :title %>
+<%= f.text_field :title %>
+<br/>
+<%= f.label :post_body %>
+<%= f.text_area :post_body %>
+
+<%= f.submit %>
+
+<% end %>	

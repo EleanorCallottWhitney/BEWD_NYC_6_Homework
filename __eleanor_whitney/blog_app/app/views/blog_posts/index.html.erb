@@ -1,0 +1,32 @@
+<h1> My Awesome Blog </h1>
+
+<h2> Personal ramblings from your's truly </h2>
+
+<%=link_to "Create Post", new_blog_post_path %>
+
+<br/>
+
+<table>
+	<tr>
+		<th>title</th>
+		<th>post date</th>
+		<th>post body</th>
+		<th>links<th>
+	</tr>		
+
+<% @blog_posts.each do |post| %>
+
+<tr> 
+	<td><%= link_to post.title, blog_post_path(post) %></td>
+	<td><%= post.created_at %></td>
+	<td><%= post.post_body %></td>
+	<td>
+		<%= link_to "View", blog_post_path(post) %>
+		<%= link_to "Edit", edit_blog_post_path(post) %>
+		<%= link_to "Delete", post, method: :delete, data: { confirm: "Are you sure?" } %>
+	</td>	
+</tr>
+
+<% end %>
+
+</table>

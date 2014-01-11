@@ -1,0 +1,28 @@
+<h1><%= @blog_post.title %> (<%= @blog_post.created_at %>)</h1>
+
+<p><%= @blog_post.post_body %></p>
+
+<%= link_to "Back", blog_posts_path %> 
+
+<h2> Comments </h2>
+
+<% @blog_post.comments.each do |comment| %>
+
+<h3><%= comment.email %></h3>
+<p><%= comment.content %></p> 
+<br/>
+
+<% end %>
+
+<%= form_for([@blog_post, @comment]) do |f|  %>
+
+<%= f.label :email %>
+<%= f.text_field :email %>
+<br/>
+<%= f.label :content %>
+<%= f.text_area :content %>
+
+<%= f.submit %>
+
+
+<% end %>	
